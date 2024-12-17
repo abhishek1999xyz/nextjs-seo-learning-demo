@@ -1,0 +1,29 @@
+SEO Strategy For NEXT.js
+
+--> Used Head from next/head to pass meta tags. [Increase Site Function Visibility].
+--> Canonical Tags + Site Data => Increase Reachalibilty
+--> Avoid duplicate content and guide search engines to the main page.
+Structured Data (Schema.org)
+
+--> Improve traffic with JSON-LD.
+
+### Rendering Strategies ###
+
+-->  Static site generation is probably the best type of rendering strategy for SEO as not only do you have all the HTML on page load because it's pre-rendered, but it also helps with page performance.
+
+--> Server-Side Rendering (SSR) generated at request time. This is great for when you have pages that are very dynamic.
+
+--> Client Side Rendering (CSR) generated at request time. This is great for when you have pages that are very dynamic. CSR is perfect for data heavy dashboards, account pages or any page that you do not require to be in any search engine index.
+
+Note: The most important thing for SEO is that page data and metadata is available on page load without JavaScript. In this case SSG or SSR are going to be your best options.
+
+--> Next.js is per-page configuration for pre-rendering. You can choose a different data fetching strategy for each page.
+
+--> Optimize load times and interactivity (e.g., image optimization, lazy loading).
+--> Use next/link for better navigation and link equity.
+
+--> getStaticProps for SSG, getServerSideProps for SSR, and getInitialProps for mixed approaches when you need page-specific rendering.
+
+--> URL Structure is an important part of an SEO strategy.
+
+--> Web Vitals score is important for SEO shows Loading, interactivity, and visual stability
